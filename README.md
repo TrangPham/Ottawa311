@@ -10,6 +10,9 @@ Orginal data set: http://data.ottawa.ca/en/dataset/2014-311-monthly-service-requ
 
 * Database initialization: place CSV files in files/ and then run ServiceRequestsController::ingest
 
+<h3>Screenshot</h3>
+<img src="screenshot.png"></img>
+
 <h3>Verifying number of data points</h3>
 ```
 $ wc -l < files/AugSR-2014.csv
