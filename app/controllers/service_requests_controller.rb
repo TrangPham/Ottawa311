@@ -6,7 +6,6 @@ class ServiceRequestsController < ApplicationController
   # GET /service_requests.json
   def index
     @service_requests = ServiceRequest.all
-    ingest
   end
 
   # GET /service_requests/1
