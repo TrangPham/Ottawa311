@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  creation_date: 2014-09-14 12:01:47
+  ward: 1
+  call_description: MyString
+  call_type: MyString
+  maintenance_yard: MyString
+  source: MyString
+
+two:
+  creation_date: 2014-09-14 12:01:47
+  ward: 1
+  call_description: MyString
+  call_type: MyString
+  maintenance_yard: MyString
+  source: MyString

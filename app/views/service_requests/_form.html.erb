@@ -1,0 +1,45 @@
+<%= form_for(@service_request) do |f| %>
+  <% if @service_request.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@service_request.errors.count, "error") %> prohibited this service_request from being saved:</h2>
+
+      <ul>
+      <% @service_request.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :creation_date %><br>
+    <%= f.datetime_select :creation_date %>
+  </div>
+  <div class="field">
+    <%= f.label :ward %><br>
+    <%= f.number_field :ward %>
+  </div>
+  <div class="field">
+    <%= f.label :call_description %><br>
+    <%= f.text_field :call_description %>
+  </div>
+  <div class="field">
+    <%= f.label :call_type %><br>
+    <%= f.text_field :call_type %>
+  </div>
+  <div class="field">
+    <%= f.label :maintenance_yard %><br>
+    <%= f.text_field :maintenance_yard %>
+  </div>
+  <div class="field">
+    <%= f.label :source %><br>
+    <%= f.text_field :source %>
+  </div>
+  <div class="field">
+    <%= f.label :month %><br>
+    <%= f.text_field :month %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

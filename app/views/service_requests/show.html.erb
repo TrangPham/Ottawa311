@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Creation date:</strong>
+  <%= @service_request.creation_date %>
+</p>
+
+<p>
+  <strong>Ward:</strong>
+  <%= @service_request.ward %>
+</p>
+
+<p>
+  <strong>Call description:</strong>
+  <%= @service_request.call_description %>
+</p>
+
+<p>
+  <strong>Call type:</strong>
+  <%= @service_request.call_type %>
+</p>
+
+<p>
+  <strong>Maintenance yard:</strong>
+  <%= @service_request.maintenance_yard %>
+</p>
+
+<p>
+  <strong>Source:</strong>
+  <%= @service_request.source %>
+</p>
+
+<p>
+  <strong>Month:</strong>
+  <%= @service_request.month %>
+</p>
+
+<%= link_to 'Edit', edit_service_request_path(@service_request) %> |
+<%= link_to 'Back', service_requests_path %>

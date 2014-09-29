@@ -1,0 +1,39 @@
+<h1>Listing service_requests</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Creation date</th>
+      <th>Ward</th>
+      <th>Call description</th>
+      <th>Call type</th>
+      <th>Maintenance yard</th>
+      <th>Source</th>
+      <th>Month</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <%= @files %>
+
+    <% @service_requests.each do |service_request| %>
+      <tr>
+        <td><%= service_request.creation_date %></td>
+        <td><%= service_request.ward %></td>
+        <td><%= service_request.call_description %></td>
+        <td><%= service_request.call_type %></td>
+        <td><%= service_request.maintenance_yard %></td>
+        <td><%= service_request.source %></td>
+        <td><%= service_request.month %></td>
+        <td><%= link_to 'Show', service_request %></td>
+        <td><%= link_to 'Edit', edit_service_request_path(service_request) %></td>
+        <td><%= link_to 'Destroy', service_request, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Service request', new_service_request_path %>
